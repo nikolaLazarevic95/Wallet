@@ -13,7 +13,7 @@ https://wallet-by-laza-489a3a.netlify.app/
  
 -<a href ="https://app.netlify.com/teams/nikolalazarevic95/overview/">Netlify for deploying the website</a>  
 
--<a href =https://mars-server.net/">MARS Engine for backend</a>
+-<a href ="https://mars-server.net/">MARS Engine for backend</a>
 
 <b>⚡ Installation  </b>
   -clone repo
