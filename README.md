@@ -3,6 +3,9 @@
 Simple webiste to help you remember all Wife Related things. Never forget what wife told you in past conersations :)
 
 --Link to the application--
+http://906y122.e2.mars-hosting.com/
+
+-backup link-
 https://wallet-by-laza-489a3a.netlify.app/
 
 <b>🛠️ Technologies used</b>
