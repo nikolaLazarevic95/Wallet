@@ -81,23 +81,23 @@
           <div class="form-control" v-if="mode === 'signup'">
             <label for="username">Username</label>
             <input type="text" id="username" v-model.trim="username" />
-            <p  class="error"  v-if="!formIsValid && this.username == ''">
-            Please enter a username.
-          </p>
+            <p class="error" v-if="!formIsValid && this.username == ''">
+              Please enter a username.
+            </p>
           </div>
           <div class="form-control">
             <label for="email">E-Mail</label>
             <input type="email" id="email" v-model.trim="email" />
-            <p  class="error"  v-if="!formIsValid && this.email == ''">
-            Please enter a valid email.
-          </p>
+            <p class="error" v-if="!formIsValid && this.email == ''">
+              Please enter a valid email.
+            </p>
           </div>
           <div class="form-control">
             <label for="password">Password</label>
             <!-- <p id="mala">(must be at least 6 characters long,  have Uppercase letters and numbers)</p> -->
             <input type="password" id="password" v-model.trim="password" />
           </div>
-          <p class="error" v-if="!formIsValid  ">
+          <p class="error" v-if="!formIsValid">
             Please enter a valid password (at least 6 characters long, have
             Uppercase letters and numbers)
           </p>
@@ -152,9 +152,12 @@ export default {
     async submitForm() {
       this.formIsValid = true;
 
-      if (this.username === '' ) {
-        this.formIsValid = false
-        return
+      if (this.mode === 'signup') {
+        if (this.username === '') {
+          this.formIsValid = false;
+          console.log('aooo'); //misli? da treba da gleda i to
+          return;
+        }
       }
       if (
         this.password.search(/[0-9]/) < 0 ||
@@ -165,11 +168,12 @@ export default {
         return;
       }
       if (
-        this.email === '' || 
+        this.email === '' ||
         !this.email.includes('@') ||
-        this.password.length < 6
+        this.password.length <= 6
       ) {
         this.formIsValid = false;
+        console.log('drugi ');
         return;
       }
 
