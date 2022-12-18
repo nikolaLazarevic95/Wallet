@@ -1,6 +1,6 @@
 <b>📝 Wallet.js 📝 </b>
 
-Simple webiste to help you remember all Wife Related things. Never forget what wife told you in past conersations :)
+Wallet app, made by a colleague (backend) and me (frontend) made in the scope of the internship.
 
 --Link to the application--
 http://906y122.e2.mars-hosting.com
