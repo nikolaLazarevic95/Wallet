@@ -21,6 +21,5 @@ https://wallet-by-laza-489a3a.netlify.app
 <b>⚡ Installation  </b>
   -clone repo
   -npm install
-  -npm run
-
+  -npm run serve
 
